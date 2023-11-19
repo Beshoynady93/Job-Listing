@@ -5,6 +5,7 @@ import JobList from './components/JobList';
 
 function App() {
   const [filteredItems, setFilteredItems] = useState([]);
+  const [jobList, setJobList] = useState([]);
 
   return (
     <>
@@ -14,7 +15,11 @@ function App() {
           filteredItems={filteredItems}
           setFilteredItems={setFilteredItems}
         />
-        <JobList filteredItems={filteredItems} />
+        <JobList
+          filteredItems={filteredItems}
+          jobList={jobList}
+          setJobList={setJobList}
+        />
       </main>
     </>
   );
