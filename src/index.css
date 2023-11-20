@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.filter-item-clicked {
+  background-color: hsl(180, 29%, 70%);
+  color: hsl(180, 14%, 20%);
+  transition: 400ms;
+}
