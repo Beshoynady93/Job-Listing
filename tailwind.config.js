@@ -23,11 +23,14 @@ export default {
     },
     screens: {
       mobile: '375px',
-      desktop: '1440px',
+      desktop: '1170px',
     },
     backgroundImage: {
       bgHeaderMobile: `url('assets/images/bg-header-mobile.svg')`,
       bgHeaderDesktop: `url('assets/images/bg-header-desktop.svg')`,
+    },
+    gridTemplateColumns: {
+      jobCardLayout: 'max-content auto auto',
     },
   },
   plugins: [],

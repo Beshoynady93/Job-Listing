@@ -19,7 +19,7 @@ const Filter = ({ filteredItems, setFilteredItems }) => {
 
   return (
     <section className="px-4 py-2 bg-neutral-50 rounded-md w-11/12 shadow-lg mx-auto -translate-y-8">
-      <div className="p-2 flex items-center font-heading">
+      <div className="p-2 flex gap-4 justify-between items-center font-heading">
         <div className="flex flex-wrap gap-4">
           <div>
             <button
@@ -32,7 +32,7 @@ const Filter = ({ filteredItems, setFilteredItems }) => {
             </button>
             <button
               onClick={(e) => removeItemFromFiltered(e)}
-              className="bg-primary text-white px-2 py-1 rounded-r-sm font-bold"
+              className="bg-primary text-white px-2 py-1 rounded-r-sm font-bold hover:bg-black hover:text-white transition-colors duration-200"
               data-type="Frontend"
             >
               X
@@ -48,7 +48,7 @@ const Filter = ({ filteredItems, setFilteredItems }) => {
               CSS
             </button>
             <button
-              className="bg-primary text-white px-2 py-1 font-bold rounded-r-sm"
+              className="bg-primary text-white px-2 py-1 font-bold rounded-r-sm hover:bg-black hover:text-white transition-colors duration-200"
               data-type="CSS"
               onClick={(e) => removeItemFromFiltered(e)}
             >
@@ -67,7 +67,7 @@ const Filter = ({ filteredItems, setFilteredItems }) => {
               Javascript
             </button>
             <button
-              className="bg-primary text-white px-2 py-1 font-bold rounded-r-sm"
+              className="bg-primary text-white px-2 py-1 font-bold rounded-r-sm  hover:bg-black hover:text-white transition-colors duration-200"
               data-type="Javascript"
               onClick={(e) => removeItemFromFiltered(e)}
             >
@@ -76,7 +76,7 @@ const Filter = ({ filteredItems, setFilteredItems }) => {
           </div>
         </div>
         <button
-          className="text-neutral-darkGrayishCyan font-bold"
+          className="text-neutral-darkGrayishCyan font-bold hover:text-primary hover:underline transition-all duration-200"
           onClick={clearFilteredItemsHandler}
         >
           Clear
